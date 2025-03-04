@@ -31,9 +31,5 @@ public class LinkedListPractice {
         linkedList.removeLast();// O(1)
         
         System.out.println(linkedList);
-
-        Iterator<Integer> integerIterator = linkedList.descendingIterator();
-
-
     }
 }
