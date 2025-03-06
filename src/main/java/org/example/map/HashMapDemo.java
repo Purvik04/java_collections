@@ -3,7 +3,6 @@ package org.example.map;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import java.util.Stack;
 
 public class HashMapDemo {
 
@@ -38,6 +37,16 @@ public class HashMapDemo {
         //map.remove(4);
         boolean res = map.remove(4, "Strawberry");
         System.out.println("Removed? : " + res);
+
+        String notFound = map.getOrDefault(5, "Not Found");
+        System.out.println(notFound);
+
+        map.putIfAbsent(5, "Mango");
+
+        map.put(null, "null");
+        System.out.println(map.get(null));
+        //only one null key is allowed stored at 0th index bucket
+
 
     }
 }
