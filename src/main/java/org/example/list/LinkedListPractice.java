@@ -31,5 +31,7 @@ public class LinkedListPractice {
         linkedList.removeLast();// O(1)
         
         System.out.println(linkedList);
+
+        //ll can be used as stack and queue both due to doubly ll implementation
     }
 }
